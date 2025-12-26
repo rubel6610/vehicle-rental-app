@@ -4,6 +4,8 @@ import initDB from "./config/db";
 import { userRoutes } from "./modules/users/users.routes";
 import { authRoutes } from "./modules/auth/auth.routes";
 
+import { bookingRoutes } from "./modules/booking/booking.routes";
+
 const app = express();
 
 // parser (MiddleWare)
@@ -20,6 +22,8 @@ initDB();
 
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", authRoutes);
+
+app.use("/api/v1", bookingRoutes);
 
 // not found error handle
 app.use((req: Request, res: Response) => {
