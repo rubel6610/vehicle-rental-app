@@ -3,7 +3,7 @@ import logger from "./middleware/logger";
 import initDB from "./config/db";
 import { userRoutes } from "./modules/users/users.routes";
 import { authRoutes } from "./modules/auth/auth.routes";
-
+import { vehicleRoutes } from "./modules/vehicle/vehicle.routes";
 import { bookingRoutes } from "./modules/booking/booking.routes";
 
 const app = express();
@@ -22,7 +22,7 @@ initDB();
 
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", authRoutes);
-
+app.use("/api/v1", vehicleRoutes);
 app.use("/api/v1", bookingRoutes);
 
 // not found error handle
