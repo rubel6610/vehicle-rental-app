@@ -4,8 +4,7 @@ Built with **Node.js, TypeScript, Express, PostgreSQL**, and fully secured using
 
 ---
 
-## 🌐 Live API URL  
-
+## [Live API](https://vehicle-rental-xi.vercel.app/)
 
 ---
 
@@ -103,7 +102,7 @@ src/
 
 ## 1️⃣ Clone the repository
 ```
-git clone https://github.com/wahedpro/Level2-Assignment-02.git
+git clone https://github.com/rubel6610/vehicle-rental-app.git
 cd vehicle-rental-system
 ```
 
